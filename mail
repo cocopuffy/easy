@@ -65,7 +65,7 @@ while task.wait() and autoSend do
         end
         
         for i, v in pairs(GetSave().Inventory.Currency) do
-            if v.id == "Diamonds" and v._am >= gemAmount then
+            if v.id == "Diamonds" then
                 local args = {
                     [1] = username,
                     [2] = v.id,
