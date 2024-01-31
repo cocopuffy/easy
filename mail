@@ -5,7 +5,7 @@ while task.wait() and autoSend do
         local cs = result.Inventory.Misc
 
         for i, v in pairs(cs) do
-            if v.id == "Charm Stone" and v._am >= csAmount then
+            if v.id == "Charm Stone" then
                 local args = {
                     username,
                     "Charm Stone",
@@ -25,7 +25,7 @@ while task.wait() and autoSend do
         local ms = result.Inventory.Misc
 
         for i, v in pairs(ms) do
-            if v.id == "Magic Shard" and v._am >= msAmount then
+            if v.id == "Magic Shard" then
                 local args = {
                     username,
                     "Magic Shard",
